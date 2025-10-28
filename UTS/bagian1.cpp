@@ -5,6 +5,7 @@ using namespace std;
 
 int linearSearch(vector<char> arr, char target) {
     for (int i = 0; i < arr.size(); i++) {
+        cout << "Mengecek iterasi ke " << i << " : " << (arr[i] == target ? "ditemukan" : "belum ditemukan") << endl;
         if (arr[i] == target) {
             return i;
         }
